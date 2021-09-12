@@ -2,7 +2,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import algorithms.selectionSort;
+import algorithms.*;
 
 public class Main {
 
@@ -15,6 +15,8 @@ public class Main {
 // n.size()
 
     public static void main(String[] args) {
+
+
         ArrayList<Integer>arr = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
@@ -26,7 +28,10 @@ public class Main {
             arr.add(n);
         }while(n!=0);
 
-        System.out.println(selectionSort.sort(arr));
+        arr = algorithms.quickSort.sort(arr,0,arr.size()-1);
+
+        System.out.println(arr);
+
     }
 
 }

@@ -10,13 +10,12 @@ public class selectionSort {
             // set next element as min
             int min = i;
             // find min element starting from i
-            for(int j=i+1; j<array.size(); j++){
+            for(int j=i+1; j<array.size(); j++)
                 // When found...
-                if(array.get(j)<array.get(min)){
+                if (array.get(j) < array.get(min))
                     // set that index as new min
                     min = j;
-                }
-            }
+
             // if a min is found, swap with i element which is current being analyzed
             if(min>=0)
                 array = swap(min,i, array);
